@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "sqlmodel-async-example"
+version = "0.1.0"
+description = ""
+authors = ["Shashi Deshetti <deshetti@gmail.com>"]
+readme = "README.md"
+packages = [{include = "sqlmodel_async_example"}]
+
+[tool.poetry.dependencies]
+python = "3.10.4"
+sqlmodel = "^0.0.8"
+asyncpg = "^0.28.0"
+fastapi = "^0.101.0"
+uvicorn = "^0.23.2"
+
+
+[tool.poetry.group.dev.dependencies]
+isort = "^5.12.0"
+black = "^23.7.0"
+flake8 = "^6.1.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
